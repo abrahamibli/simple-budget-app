@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SIMPLE BUDGET APP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">History</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container pt-25">
+    <h1>YOUR BUDGET</h1>
+    <div class="card rounded">
+      <div class="card-body">
+        <button class="btn btn-outline-secondary btn-sm" onclick="deleteAll()" type="reset" value="Reset"><i class="fas fa-eraser"></i> Delete All</button>
+        <h5 class="card-title text-center">Balance <i class="fas fa-dollar-sign"></i></h5>
+        <h1 class="mb-25 balance-text text-center"><span>$</span> <span id="balanceText">0</span></h1>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h6 class="card-subtitle mb-2 text-muted">Weekly Budget <i class="fas fa-money-check-alt"></i></h6>
+            <h2 class="budget-text mb-25"><span>$</span> <span id="weeklyBudgetText">0</span></h2>
+            <div class="text-left rounded-border mb-25">
+              <p>Change Weekly Budget</p>
+              <form id="newBudgetForm">
+                <div class="mb-3">
+                  <input type="number" min="0" placeholder="New Budget" class="form-control" id="changeBudgetInput" aria-describedby="budgetChange">
+                  <div class="valid-feedback" id="changeBudgetValidator">
+                    
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Change</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h6 class="card-subtitle mb-2 text-muted">Expenses <i class="fas fa-coins"></i></h6>
+            <h2 class="expenses-text mb-25"><span>$</span> <span id="expensesText">0</span></h2>
+            <table class="table table-bordered mb-25" id="expenseTable">
+              <thead class="thead-custom">
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody id="expenseList">
+              </tbody>
+            </table>
+            <div class="text-left rounded-border">
+              <p>Add New Expense</p>
+              <form id="newExpenseForm">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Title" id="newExpenseTitle" aria-describedby="newTitle">
+                  <div class="valid-feedback" id="newTitleValidator">
+                    
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input type="number" min="1" class="form-control" placeholder="Amount" id="newExpenseValue" aria-describedby="newValue">
+                  <div class="valid-feedback" id="newValueValidator">
+                    
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Add</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="bg-light text-center text-lg-start footer">
+    <div class="text-center p-3">
+      Abraham Ibarra Linares
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

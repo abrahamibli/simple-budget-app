@@ -1,0 +1,82 @@
+body {
+    background-color: #00536B;
+}
+
+h1 {
+    color: white;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.expenses-text {
+    color: red;
+}
+
+.budget-text {
+    color: green;
+}
+
+.balance-text {
+    color: black;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.rounded-border {
+    border-radius: 25px;
+    border: 2px solid #00536B;
+    padding: 20px;
+}
+
+.btn-submit {
+    background-color: #00536B;
+    color: white;
+}
+.btn-submit:hover {
+    color: gainsboro;
+}
+
+.container {
+    min-height: calc( 100vh - 90.88px );
+    padding-bottom: 100px;
+}
+
+.pb-25 {
+    padding-bottom: 25px;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 75px;
+    margin-top: -75px;
+}
+
+.valid-feedback {
+    color: red;
+}
+
+.thead-custom {
+    background-color: #00536B;
+    color: white;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.red-icon {
+    color: red;
+}
+
+.display {
+    display: inline;
+}
+
+@media screen and (max-width: 767px) {
+
+}
