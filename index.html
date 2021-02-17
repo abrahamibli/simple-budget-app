@@ -47,7 +47,7 @@
               <p>Change Weekly Budget</p>
               <form id="newBudgetForm">
                 <div class="mb-3">
-                  <input type="number" min="0" placeholder="New Budget" class="form-control" id="changeBudgetInput" aria-describedby="budgetChange">
+                  <input type="number" min="0" max="9007199254740991" placeholder="New Budget" class="form-control" id="changeBudgetInput" aria-describedby="budgetChange">
                   <div class="valid-feedback" id="changeBudgetValidator">
                     
                   </div>
@@ -80,7 +80,7 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <input type="number" min="1" class="form-control" placeholder="Amount" id="newExpenseValue" aria-describedby="newValue">
+                  <input type="number" min="1" max="9007199254740991" class="form-control" placeholder="Amount" id="newExpenseValue" aria-describedby="newValue">
                   <div class="valid-feedback" id="newValueValidator">
                     
                   </div>
